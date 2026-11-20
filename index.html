@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>HorizonDown</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" id="touchIcon">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="HorizonDown">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style>
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;color:white;font:16px system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(circle at 50% 15%,#0a84ff2e,transparent 45%) fixed,#000;min-height:100dvh}
+.glass{background:#101823;border:1px solid #ffffff24;box-shadow:inset 0 1px 0 #ffffff18}
+header.glass{position:sticky;top:0;z-index:2;border-width:0 0 1px;padding:env(safe-area-inset-top) 18px 0;height:calc(58px + env(safe-area-inset-top));display:flex;align-items:center;font-weight:900;font-size:24px;letter-spacing:-.3px}
+header span,h1 b{background:linear-gradient(90deg,#4fc3ff,#0a6cff);color:transparent;background-clip:text}
+main{width:min(calc(100% - 40px),560px);margin:44px auto 0;text-align:center;padding-bottom:calc(116px + env(safe-area-inset-bottom))}
+h1{margin:0;font-size:clamp(34px,10vw,48px);line-height:1.1} h1 b{display:block}
+.sub{color:#c0c4ca;font-size:15px;line-height:1.5}
+form{margin-top:30px}
+.field{padding:7px 7px 7px 20px;border-radius:999px;display:flex;gap:8px;align-items:center}
+form.invalid .field{border-color:#ff636e;box-shadow:0 0 0 2px #ff636e55}
+input{min-width:0;flex:1;height:48px;background:transparent;border:0;color:white;font:inherit;outline:none}
+form:not(.invalid) .field:focus-within{border-color:#57baff}
+.btn{display:inline-block;text-decoration:none;border:none;color:white;font:700 15px system-ui;cursor:pointer;border-radius:999px;background:linear-gradient(135deg,#0a9dff,#0a6cff);padding:13px 20px}
+#submit,article .btn{display:grid;place-items:center;width:100%;height:64px;margin-top:12px;border-radius:10px}
+#submit:disabled{background:#253f60;color:#b1c3dc;box-shadow:none;cursor:default}
+#clear{width:44px;height:44px;border:0;border-radius:50%;background:transparent;color:#c8d7e8;font:26px/1 system-ui;cursor:pointer}
+#clear:focus-visible{outline:2px solid #57baff}
+.btn:active{transform:scale(.97)}
+.btn:focus-visible{outline:2px solid white;outline-offset:3px}
+#status{margin:12px 0;color:#b9c9da;font-size:14px}#status:empty{display:none}#status.error{color:#ff9ca4}
+#empty{margin-top:64px;color:#939aa4}#empty svg{width:96px;height:96px;stroke:#0a6cff;opacity:.65}
+#empty h3{margin:10px 0 4px;font-size:16px}#empty p{margin:0;font-size:13px}
+article{margin-top:22px}.preview{padding:6px;border-radius:18px;overflow:hidden}.preview video,.preview img{display:block;width:100%;max-height:65dvh;border-radius:13px;background:#080c13;object-fit:contain}.info{text-align:left;border-radius:18px;margin-top:10px;padding:18px}.info h2{font-size:clamp(17px,4vw,20px);line-height:1.45;color:#f3f7ff;overflow-wrap:anywhere;margin:0;white-space:pre-line}.notice{font-size:14px;color:#becbda}
+aside{position:fixed;z-index:2;bottom:calc(14px + env(safe-area-inset-bottom));left:16px;right:16px;margin:auto;max-width:560px;border-radius:999px;padding:10px 10px 10px 12px;display:flex;gap:12px;align-items:center}
+aside img{width:42px;height:42px;border-radius:12px}aside span{flex:1;font-weight:700;font-size:14px}aside button{flex-shrink:0}
+#savedShares{margin-top:24px;text-align:left}#savedShares h2{font-size:17px}
+.mini{display:flex;align-items:center;gap:12px;width:100%;padding:7px;margin:8px 0;border-radius:12px;color:white;font:600 15px system-ui;text-align:left;cursor:pointer}
+.cover{position:relative;display:grid;place-items:center;background:#20334b;color:#91caff;width:48px;height:48px;flex:none;border-radius:8px;overflow:hidden}.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.mini span:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#viewer{position:fixed;inset:0;width:100%;max-width:none;height:100%;height:100dvh;max-height:none;margin:0;border:0;padding:0;background:#080c13;color:white;overscroll-behavior:contain}
+.viewerBody{max-width:640px;margin:auto;padding:calc(16px + env(safe-area-inset-top)) 16px calc(24px + env(safe-area-inset-bottom))}
+#closeViewer{position:sticky;top:8px;z-index:1}#viewerStatus,#shareStatus{font-size:14px;color:#b9c9da}
+</style>
+</head>
+<body>
+<header class="glass">Horizon<span>Down</span></header>
+<main><h1>Instagram <b>Downloader</b></h1>
+<p class="sub">Download Instagram reels, posts, stories, and highlights.</p>
+<form id="search" novalidate><div class="field glass"><input id="link" type="text" inputmode="url" enterkeyhint="search" aria-label="Instagram link" aria-describedby="status" autocapitalize="none" spellcheck="false" placeholder="Paste Instagram link"><button type="button" id="clear" aria-label="Clear link" hidden>×</button></div><button type="submit" id="submit" class="btn" disabled>Search</button></form>
+<p id="status" role="status" aria-live="polite"></p>
+<div id="empty"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="7.5"/><path d="M20.5 20.5l-4-4"/></svg><h3>Search for Instagram media</h3><p>Paste a link above and tap Search</p></div>
+<section id="results" aria-label="Search results"></section><section id="savedShares" hidden><h2>Shared media</h2><div id="sharedList"></div><p id="shareStatus" role="status"></p></section></main>
+<dialog id="viewer" aria-label="Shared media"><div class="viewerBody"><button class="btn" id="closeViewer" autofocus>Close</button><p id="viewerStatus" role="status"></p><div id="viewerItems"></div></div></dialog>
+<aside id="installBar" class="glass"><img id="appIcon" alt=""><span>HorizonDown App download</span><button id="installBtn" class="btn">Download Now</button></aside>
+<script>
+"use strict";
+const $ = id => document.getElementById(id);
+const icon = document.querySelector('link[rel="icon"]').href;
+$('touchIcon').href = icon;
+$('appIcon').src = icon;
+const endpoint = 'https://jerrycoder.oggyapi.workers.dev/down/insta';
+const form = $('search'), input = $('link'), statusLine = $('status'), results = $('results');
+let active = null, errorTimer;
+function instagramLink(raw) {
+  let value = raw.trim();
+  if (/^(?:(?:www|m)\.)?instagram\.com\//i.test(value)) value = 'https://' + value;
+  try {
+    const url = new URL(value);
+    if (!['http:', 'https:'].includes(url.protocol) || !['instagram.com','www.instagram.com','m.instagram.com'].includes(url.hostname) || url.username || url.password || url.port) return null;
+    if (!/^\/(?:(?:reels?|p|tv)\/[\w-]+|stories\/(?:[\w.]+\/\d+|highlights\/\d+)|share\/(?:reel|p|stories)\/[\w-]+)\/?$/.test(url.pathname)) return null;
+    url.hash = '';
+    return url;
+  } catch { return null; }
+}
+function remoteURL(value) {
+  if (typeof value !== 'string') return '';
+  try { const url = new URL(value); return url.protocol === 'https:' && !url.username && !url.password ? url.href : ''; }
+  catch { return ''; }
+}
+function message(text, error=false) {
+  statusLine.textContent = text;
+  statusLine.classList.toggle('error', error);
+}
+function clearInvalid() {
+  clearTimeout(errorTimer);
+  form.classList.remove('invalid');
+  input.removeAttribute('aria-invalid');
+}
+function syncControls() {
+  $('submit').disabled = !input.value.trim();
+  $('clear').hidden = !input.value;
+}
+function resetSearch() {
+  active?.abort();
+  active = null;
+  form.removeAttribute('aria-busy');
+  clearInvalid();
+  results.replaceChildren();
+  $('empty').hidden = saved.size > 0;
+  message('');
+  syncControls();
+}
+input.addEventListener('input', resetSearch);
+$('clear').addEventListener('click', () => {
+  input.value = '';
+  resetSearch();
+  input.focus();
+});
+window.addEventListener('pageshow', syncControls);
+syncControls();
+function titleOf(...values) { return values.find(v => typeof v === 'string' && v.trim())?.trim() || ''; }
+function mediaItems(data) {
+  const rows = Array.isArray(data) ? data : data?.items || data?.media || data?.medias || data?.carousel || data?.urls || [data];
+  return (Array.isArray(rows) ? rows : [rows]).flatMap(entry => {
+    if (!entry) return [];
+    const url = remoteURL(typeof entry === 'string' ? entry : entry.url || entry.download_url || entry.video_url || entry.image_url);
+    if (!url) return [];
+    const image = /image|photo|picture/i.test(entry.type || data.type || '') || !!entry.image_url && !entry.video_url || /\.(jpg|jpeg|png|webp)(?:[?#]|$)/i.test(url);
+    return [{url, image, poster:remoteURL(entry.thumbnail || data.thumbnail), title:titleOf(entry.title,entry.caption,data.title,data.caption)}];
+  });
+}
+function card(item, label, index, count) {
+  const row = document.createElement('article');
+  row.innerHTML = '<div class="preview glass"></div><div class="info glass"><h2></h2><p class="notice" role="status" hidden></p></div><a class="btn">Download</a>';
+  const preview = document.createElement(item.image ? 'img' : 'video');
+  if (item.image) preview.alt = item.title || label;
+  else { preview.controls = true; preview.playsInline = true; preview.preload = 'metadata'; if (item.poster) preview.poster = item.poster; }
+  preview.addEventListener('error', () => {
+    const notice = row.querySelector('.notice');
+    notice.hidden = false;
+    notice.textContent = 'Preview unavailable. Try Download, or search again to refresh the link.';
+  });
+  preview.src = item.url;
+  row.querySelector('.preview').append(preview);
+  row.querySelector('h2').textContent = item.title || label + (count > 1 ? ' · ' + (index + 1) + ' of ' + count : '');
+  const download = row.querySelector('a');
+  download.href = item.url;
+  download.download = '';
+  download.target = '_blank';
+  download.rel = 'noopener noreferrer';
+  download.textContent = item.image ? 'Download photo' : 'Download video';
+  return row;
+}
+function mediaLabel(url) {
+  return url.pathname.startsWith('/stories/highlights/') ? 'Instagram Highlight' : /\/reels?\//.test(url.pathname) ? 'Instagram Reel' : /\/stories\//.test(url.pathname) ? 'Instagram Story' : 'Instagram Post';
+}
+async function lookup(url,signal) {
+  const api = new URL(endpoint); api.searchParams.set('url',url.href);
+  const response = await fetch(api,{signal,cache:'no-store',credentials:'omit'});
+  if (!response.ok) throw new Error(response.status === 429 ? 'Too many searches. Try again shortly.' : 'Instagram lookup failed. Try again shortly.');
+  const body = await response.json();
+  const items = body.status === 'error' ? [] : mediaItems(body.data);
+  if (!items.length) throw new Error('No media found. The post may be private, expired, or unavailable.');
+  return items;
+}
+form.addEventListener('submit', async event => {
+  event.preventDefault();
+  active?.abort(); active = null;
+  clearInvalid(); results.replaceChildren();
+  form.removeAttribute('aria-busy');
+  const url = instagramLink(input.value);
+  $('empty').hidden = !!url || saved.size > 0;
+  if (!url) {
+    form.classList.add('invalid'); input.setAttribute('aria-invalid','true');
+    message('Paste an Instagram reel, post, story, or highlight link.', true); input.focus();
+    errorTimer = setTimeout(() => { clearInvalid(); message(''); }, 3500); return;
+  }
+  const controller = new AbortController(); active = controller;
+  const timer = setTimeout(() => controller.abort(), 30000);
+  form.setAttribute('aria-busy','true'); message('Please wait, finding your file…');
+  try {
+    const items = await lookup(url,controller.signal);
+    if (active !== controller) return;
+    const label = mediaLabel(url);
+    results.replaceChildren(...items.map((item,i) => card(item,label,i,items.length)));
+    message('');
+  } catch (error) {
+    if (active !== controller) return;
+    message(controller.signal.aborted ? 'Search timed out. Try again.' : error instanceof TypeError || error instanceof SyntaxError ? 'Could not reach the media service. Try again shortly.' : error.message,true);
+  } finally {
+    clearTimeout(timer);
+    if (active === controller) { active = null; form.removeAttribute('aria-busy'); }
+  }
+});
+const bar = $('installBar');
+let promptEvent;
+bar.hidden = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+if ('serviceWorker' in navigator && location.protocol !== 'file:') window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(()=>{}));
+navigator.getInstalledRelatedApps?.().then(apps => { if (apps.length) bar.hidden = true; }).catch(()=>{});
+window.addEventListener('beforeinstallprompt', event => {event.preventDefault(); promptEvent = event;});
+window.addEventListener('appinstalled', () => {promptEvent = null; bar.hidden = true;});
+$('installBtn').addEventListener('click', async () => {
+  if (promptEvent) {const prompt = promptEvent; promptEvent = null; await prompt.prompt(); await prompt.userChoice;}
+  else alert(/iphone|ipad|ipod/i.test(navigator.userAgent) ? 'Tap Share, then Add to Home Screen.' : 'Open the browser menu and choose Install app or Add to Home screen if available.');
+});
+const prefix = 'HorizonDown.share.';
+const saved = new Map();
+const viewer = $('viewer');
+const pending = new Map();
+let viewing = '';
+
+function sharedURL(params) {
+  for (const field of ['shareUrl','shareText','shareTitle']) {
+    const text = params.get(field) || '';
+    const candidates = text.match(/https?:\/\/[^\s<>"'“”]+|\b(?:(?:www|m)\.)?instagram\.com\/[^\s<>"'“”]+/gi) || [];
+    for (const candidate of candidates) {
+      const url = instagramLink(candidate.replace(/[)\]},.!?;:…।]+$/u, ''));
+      if (url) return url;
+    }
+  }
+}
+function saveShare(record) {
+  saved.set(record.key, record);
+  try { localStorage.setItem(prefix + record.key, JSON.stringify(record)); }
+  catch { $('shareStatus').textContent = 'Device storage is unavailable. This share is available for this session.'; }
+  showList();
+}
+function restoreShares() {
+  try {
+    for (const key of Object.keys(localStorage)) {
+      if (!key.startsWith(prefix)) continue;
+      try {
+        const record = JSON.parse(localStorage.getItem(key));
+        if (key !== prefix + record.key || !instagramLink(record.source) || !Array.isArray(record.items)) continue;
+        record.items = record.items.filter(item => remoteURL(item?.url)).map(item => ({...item, poster:remoteURL(item.poster)}));
+        saved.set(record.key, record);
+      } catch { /* Skip an unreadable entry. */ }
+    }
+  } catch { /* Session-only storage. */ }
+  showList();
+}
+function showList() {
+  const list = $('sharedList');
+  list.replaceChildren();
+  $('savedShares').hidden = !saved.size;
+  $('empty').hidden = saved.size > 0 || !!active || !!results.childElementCount;
+  for (const record of [...saved.values()].sort((a,b) => b.added - a.added)) {
+    const item = record.items[0];
+    const button = document.createElement('button');
+    button.className = 'mini glass';
+    const cover = document.createElement('span');
+    cover.className = 'cover'; cover.textContent = item?.image ? '▧' : '▶';
+    const poster = item?.poster || (item?.image && item.url);
+    if (poster) {
+      const img = document.createElement('img');
+      img.alt = ''; img.loading = 'lazy'; img.onerror = () => img.remove();
+      img.src = poster; cover.append(img);
+    }
+    const title = document.createElement('span');
+    title.textContent = item?.title || record.title || mediaLabel(new URL(record.source));
+    button.append(cover,title);
+    button.onclick = () => openShare(record);
+    list.append(button);
+  }
+}
+function drawViewer(record) {
+  const label = record.title || mediaLabel(new URL(record.source));
+  $('viewerItems').replaceChildren(...record.items.map((item,i) => card(item,label,i,record.items.length)));
+}
+async function updateShare(record) {
+  if (pending.has(record.key)) return pending.get(record.key);
+  const task = (async () => {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 30000);
+    try {
+      const items = await lookup(new URL(record.source),controller.signal);
+      const refreshed = {...saved.get(record.key),items,updated:Date.now()};
+      saveShare(refreshed);
+      if (viewing === record.key) { drawViewer(refreshed); $('viewerStatus').textContent = ''; }
+    } catch {
+      const hint = 'Could not refresh this share. Check your connection and try again.';
+      $('shareStatus').textContent = hint;
+      if (viewing === record.key) $('viewerStatus').textContent = hint;
+    } finally { clearTimeout(timer); pending.delete(record.key); }
+  })();
+  pending.set(record.key,task);
+  return task;
+}
+function openShare(record) {
+  viewing = record.key;
+  drawViewer(record);
+  $('viewerStatus').textContent = '';
+  viewer.showModal();
+  if (!record.updated || Date.now() - record.updated > 10 * 60 * 1000) {
+    $('viewerStatus').textContent = 'Refreshing media…';
+    updateShare(record);
+  }
+}
+$('closeViewer').onclick = () => viewer.close();
+viewer.addEventListener('close', () => { viewing = ''; $('viewerItems').replaceChildren(); });
+window.addEventListener('storage', e => {
+  if (e.key === null || e.key.startsWith(prefix)) { saved.clear(); restoreShares(); }
+});
+async function receiveShare() {
+  const page = new URL(location.href);
+  if (!['shareUrl','shareText','shareTitle'].some(key => page.searchParams.has(key))) return;
+  const source = sharedURL(page.searchParams);
+  const title = page.searchParams.get('shareTitle') || '';
+  if (source) {
+    const key = source.pathname.replace(/\/$/,'');
+    const old = saved.get(key);
+    const record = {...old,key,source:source.href,added:Date.now(),title:old?.title || title,items:old?.items || []};
+    $('shareStatus').textContent = '';
+    saveShare(record);
+    input.value = source.href; syncControls();
+    message('Please wait, finding your file…');
+    const originalInput = input.value;
+    await updateShare(record);
+    if (!active && input.value === originalInput && statusLine.textContent === 'Please wait, finding your file…') message('');
+  } else message('The shared message contains no supported Instagram link.',true);
+  for (const key of ['shareUrl','shareText','shareTitle']) page.searchParams.delete(key);
+  try { history.replaceState(history.state,'',page.href); } catch {}
+}
+restoreShares();
+receiveShare();
+</script></body></html>
